@@ -8,7 +8,7 @@
       Temporarily disable cerner-smart-embeddable-lib
       <link rel='stylesheet' type='text/css' href='./lib/css/cerner-smart-embeddable-lib-1.0.0.min.css'>
     -->
-    <title>Example-SMART-App - Rockclimb524 - bob barker</title>
+    <title>Example-SMART-App - Rockclimb524 - bob tester</title>
   </head>
   <body>
     <!-- Required JS files to enable this page to embed within an MPage -->
@@ -24,6 +24,9 @@
     <!-- Prevent session bleed caused by single threaded embedded browser and sessionStorage API -->
     <!-- https://github.com/cerner/fhir-client-cerner-additions -->
     <script src='./lib/js/fhir-client-cerner-additions-1.0.0.js'></script>
+
+    <!-- Currently, the SMART App Launcher (https://launch.smarthealthit.org) does not check/validate the client_id field.
+        If/when this changes, or when working with other authorization servers, please update the client_id field here. -->
     <script>
       FHIR.oauth2.authorize({
         'client_id': 'ecd34f75-76db-4ec4-a133-ae3333edd5fb',
