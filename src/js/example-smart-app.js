@@ -1,3 +1,5 @@
+var debug1;
+
 (function(window){
   window.extractData = function() {
     var ret = $.Deferred();
@@ -9,7 +11,7 @@
 
     function onReady(smart)  {
       if (smart.hasOwnProperty('patient')) {
-        var patient = smart.patient;
+        var debug1 = "debug1 test";
         patient.lname = 'smart';
         var pt = patient.read();
         
@@ -119,6 +121,7 @@
   window.drawVisualization = function(p) {
     $('#holder').show();
     $('#loading').hide();
+    $('#debug1').html(debug1);    
     $('#notbob').html('This is not Bob');
     $('#fname').html(p.fname);
     $('#lname').html(p.lname);
