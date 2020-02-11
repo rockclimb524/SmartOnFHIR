@@ -11,7 +11,7 @@ var debug1;
 
     function onReady(smart)  {
       if (smart.hasOwnProperty('patient')) {
-        var debug1 = "debug1 test";
+        debug1 = "debug1 test";
         patient.lname = 'smart';
         var pt = patient.read();
         
